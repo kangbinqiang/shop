@@ -10,6 +10,7 @@ import Cate from './components/goods/Cate.vue'
 import Params from './components/goods/Params.vue'
 import List from './components/goods/List.vue'
 import GoodsAdd from './components/goods/GoodsAdd.vue'
+import Order from './components/order/Order.vue'
 
 const routerPush = Router.prototype.push
 Router.prototype.push = function push(location) {
@@ -36,7 +37,7 @@ const router = new Router({
                 { path: '/params', component: Params },
                 { path: '/list', component: List },
                 { path: '/add/goods', component: GoodsAdd },
-
+                { path: '/order', component: Order }
             ]
         }
     ]
